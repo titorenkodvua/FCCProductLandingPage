@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    background-color: #eeeeee;
+    align-items: center;
+    padding: 10px 40px;
+    justify-content: space-between;
+    min-height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 680px) {
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+}
+
+#img-logo {
+    display: block;
+    margin: 10px;
+}
+
+nav > ul {
+    alignment: bottom;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0;
+}
+
+@media (max-width: 410px) {
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+        min-width: 140px;
+    }
+}
+
+li {
+    list-style: none;
+    padding: 0.25rem 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    color: inherit;
+    padding: 2px 20px;
+}
+
+.nav-link:hover {
+    background-color: #dddddd;
+    border-radius: 9999px;
+}
+
+#offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#container {
+    margin-top: 80px;
+}
+
+@media (max-width: 680px) {
+    #container {
+        margin-top: 110px;
+    }
+
+}
+
+@media (max-width: 410px) {
+    #container {
+        margin-top: 170px;
+    }
+}
+
+#offer input[type='email'] {
+    width: 100%;
+    max-width: 350px;
+    padding: 0.5em;
+    font-family: inherit;
+}
+
+#submit {
+    width: 150px;
+    margin: 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 9999px;
+
+    padding: 8px 20px;
+    background-color: #eeeeee;
+}
+
+#submit:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+#features {
+}
+
+i {
+    display: flex;
+    font-size: 80px;
+    color: royalblue;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#features .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+#features .text {
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    margin: 20px 0;
+}
+
+@media (max-width: 680px) {
+    #features .icon {
+        display: none;
+    }
+    #features .text{
+        text-align: center;
+        padding: 1em;
+}
+}
+
+
+@media (max-width: 680px) {
+
+}
+
+
+.text > * {
+    margin: 0;
+    padding: 0;
+}
+
+#our-brewery{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#our-brewery > iframe{
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+}
+
