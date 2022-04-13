@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
+/*@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Tajawal:wght@200&display=swap");*/
 
 body {
     font-family: 'Tajawal', sans-serif;
     font-size: 18px;
+    margin: 0;
 }
 
 header {
@@ -128,7 +130,7 @@ i {
     justify-content: center;
 }
 
-#features .icon{
+#features .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,10 +148,11 @@ i {
     #features .icon {
         display: none;
     }
-    #features .text{
+
+    #features .text {
         text-align: center;
         padding: 1em;
-}
+    }
 }
 
 
@@ -163,15 +166,123 @@ i {
     padding: 0;
 }
 
-#our-brewery{
+#our-brewery {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
 
-#our-brewery > iframe{
+#our-brewery > iframe {
     max-width: 600px;
     margin: auto;
     width: 100%;
 }
 
+h1 {
+    font-family: Oswald, Impact;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+}
+
+@media (max-width: 1200px) {
+    #products{
+        flex-flow: column;
+    }
+}
+
+#best-sellers > h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#best-sellers > p {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sku {
+    max-width: 300px;
+    min-width: 250px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sku-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sku-info {
+    display: flex;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.sku-style, .sku-ttx {
+    margin: 0;
+    padding: 0;
+}
+
+.sku-btn {
+    margin: 20px;
+}
+
+.add-to-basket {
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border-width: 0;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.add-to-basket:hover {
+    background-color: #999;
+}
+
+footer {
+    display: flex;
+    padding: 0 40px;
+    justify-content: flex-end;
+    height: 80px;
+    background-color: #eeeeee;
+    margin-top: 100px;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+footer ul li{
+    margin: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #000;
+}
